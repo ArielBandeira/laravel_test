@@ -14,21 +14,21 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = DB::table('users')->get();
+        $users = DB::table('usuario')->get();
 
         return view('user', ['users' => $users]);
     }
 
     public function turno()
     {
-        $users = DB::table('users')->get();
+        $users = DB::table('usuario')->get();
 
         return view('turno', ['users' => $users]);
     }
 
     public function login()
     {
-        $users = DB::table('users')->get();
+        $users = DB::table('usuario')->get();
 
         return view('login', ['users' => $users]);
     }
